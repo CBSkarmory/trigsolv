@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>Triangle Solver</h1>
-        
+
         <div class="SolveMethod" id="ContainerSSS">
             <form id="FormSSS">
-                Side a: <input type="text" id="inSideA"><br>
-                Side b: <input type="text" id="inSideB"><br>
-                Side c: <input type="text" id="inSideC"><br>
+                <div class="col-1">Side a:</div><input type="text" id="inSideA"><br>
+                <div class="col-1">Side b:</div><input type="text" id="inSideB"><br>
+                <div class="col-1">Side c:</div><input type="text" id="inSideC"><br>
                 <input type="submit" value="Calculate">
             </form>
-            
+
         </div>
-        
+
         <div class="Results">
             <h3>results</h3>
             <ul class="Sides">
-                <li>a = <span id="outSideA">zz</span></li>
-                <li>b = <span id="outSideB">zz</span></li>
-                <li>c = <span id="outSideC">zz</span></li>
+                <li>a = <span id="outSideA"></span></li>
+                <li>b = <span id="outSideB"></span></li>
+                <li>c = <span id="outSideC"></span></li>
             </ul>
             <ul class="Angles">
-                <li>∠A = </li>
-                <li>∠B = </li>
-                <li>∠C = </li>
+                <li>∠A = <span id="outAngleA"></span></li>
+                <li>∠B = <span id="outAngleB"></span></li>
+                <li>∠C = <span id="outAngleC"></span></li>
             </ul>
         </div>
-        
+
     </body>
     <script type="text/javascript" src="backend.js"></script>
 </html>
