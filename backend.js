@@ -7,7 +7,7 @@ var outSideC;
 var outAngleA;
 var outAngleB;
 var outAngleC;
-
+var outputs;
 window.onload = function(){
     //load vars
     inSideA = document.getElementById("inSideA");
@@ -21,6 +21,8 @@ window.onload = function(){
     outAngleA = document.getElementById("outAngleA");
     outAngleB = document.getElementById("outAngleB");
     outAngleC = document.getElementById("outAngleC");
+    
+//    outputs = [outSideA.textContent, outSideB.textContent, outSideC.textContent, outAngleA.textContent, outAngleB.textContent, outAngleC.textContent];
 }
 
 var form = document.getElementById("FormSSS");
