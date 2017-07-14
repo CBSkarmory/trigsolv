@@ -29,7 +29,7 @@ form.addEventListener("submit", function (event){
     //form validation
     if(!(inSideA.value && inSideB.value && inSideC.value)){
         alert("Please fill out all fields");
-        break;
+        return;
     }
     var side_a = parseFloat(inSideA.value);
     var side_b = parseFloat(inSideB.value);
@@ -39,7 +39,7 @@ form.addEventListener("submit", function (event){
        side_b + side_c >= side_a || 
        side_c + side_a >= side_b){
         alert("No such Triangle");
-        break;
+        return;
     }
     //math
     var angle_a = Math.acos((Math.pow(side_b,2) + Math.pow(side_c,2) - Math.pow(side_a,2))/(2 * side_b * side_c));
