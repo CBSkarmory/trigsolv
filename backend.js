@@ -35,15 +35,16 @@ form.addEventListener("submit", function (event){
     var side_b = parseFloat(inSideB.value);
     var side_c = parseFloat(inSideC.value);
     //math validation
-    if(side_a + side_b >= side_c ||
-       side_b + side_c >= side_a || 
-       side_c + side_a >= side_b){
+    if(side_a + side_b <= side_c ||
+       side_b + side_c <= side_a || 
+       side_c + side_a <= side_b){
         alert("No such Triangle");
         return;
     }
     //math
-    var angle_a = Math.acos((Math.pow(side_b,2) + Math.pow(side_c,2) - Math.pow(side_a,2))/(2 * side_b * side_c));
-    var angle_b = Math.acos((Math.pow(side_a,2) + Math.pow(side_c,2) - Math.pow(side_b,2))/(2 * side_a * side_c));
+    var pi = 3.1415926535
+    var angle_a = (360/(2*pi)) * Math.acos((Math.pow(side_b,2) + Math.pow(side_c,2) - Math.pow(side_a,2))/(2 * side_b * side_c));
+    var angle_b = (360/(2*pi)) * Math.acos((Math.pow(side_a,2) + Math.pow(side_c,2) - Math.pow(side_b,2))/(2 * side_a * side_c));
     var angle_c = 180 - angle_a - angle_b;
     //output
     outSideA.textContent = side_a;
