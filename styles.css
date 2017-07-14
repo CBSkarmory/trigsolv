@@ -23,3 +23,13 @@ ul > li {
     float: left;
     border-collapse: collapse;
 }
+font-size{
+    1rem;
+}
+
+/*-----mobile-----*/
+@media screen and (max-width:1199px){
+    body{
+        font-size: 2rem;
+    }
+}
