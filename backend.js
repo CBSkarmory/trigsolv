@@ -52,7 +52,7 @@ form.addEventListener("submit", function (event){
     outSideA.textContent = side_a;
     outSideB.textContent = side_b;
     outSideC.textContent = side_c;
-    outAngleA.textContent = angle_a;
-    outAngleB.textContent = angle_b;
-    outAngleC.textContent = angle_c;
+    outAngleA.textContent = angle_a.toFixed(3);
+    outAngleB.textContent = angle_b.toFixed(3);
+    outAngleC.textContent = angle_c.toFixed(3);
 });
