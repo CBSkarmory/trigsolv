@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
         <title>Triangle Solver</title>
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+        
+        <!-- Custom Styling -->
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Triangle Solver</h1>
+        <div class="Header" align = "center">
+            <h1>Triangle Solver</h1>
+        </div>
         <hr>
+
+        <div id="tabs">
+            <ul>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+
         <h3>current mode: SSS</h3>
+
         <hr>
+
+        <ul>
+            <li>
+                <a href="#tab-SSS">SSS</a>
+            </li>
+            <li>
+                <a href="#tab-SAS">SAS</a>
+            </li>
+            <li>
+                <a href="#tab-SSA">SSA</a>
+            </li>
+            <li>
+                <a href="#tab-rank">Rank</a>
+            </li>
+        </ul>
+
         <div class="SolveMethod" id="ContainerSSS">
             <form id="FormSSS">
                 <div class="col-2">Side a:</div><input type="text" id="inSideA"><br>
@@ -33,7 +73,14 @@
                 <li>∠C = <span id="outAngleC"></span></li>
             </ul>
         </div>
-        <script type="text/javascript" src="backend.js"></script>
+        
 
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+        
+        <!-- custom JS -->
+        <script type="text/javascript" src="backend.js"></script>
     </body>
 </html>

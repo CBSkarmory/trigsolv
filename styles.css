@@ -1,5 +1,7 @@
 body {
     background: lightgray;
+    font: 100% "Trebuchet MS", sans-serif;
+    font-family: Verdana,Arial,sans-serif;
 }
 ul > li {
     list-style: none;
@@ -23,8 +25,12 @@ ul > li {
     float: left;
     border-collapse: collapse;
 }
+/*--------default_font--------*/
 font-size{
     1rem;
+}
+h1 {
+    font:1.5rem Trebuchet MS;
 }
 
 /*-----mobile-----*/
