@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <title>Triangle Solver</title>
-        
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
-        
+
         <!-- Custom Styling -->
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="icon.png">
@@ -32,7 +32,10 @@
             </ul>
         </div>
 
-        <h3>current mode: SSS</h3>
+        <div class="container-fluid">
+            <h3>current mode: SSS</h3>
+        </div>
+
 
         <hr>
 
@@ -51,36 +54,101 @@
             </li>
         </ul>
 
-        <div class="SolveMethod" id="ContainerSSS">
-            <form id="FormSSS">
-                <div class="col-2">Side a:</div><input type="text" id="inSideA"><br>
-                <div class="col-2">Side b:</div><input type="text" id="inSideB"><br>
-                <div class="col-2">Side c:</div><input type="text" id="inSideC"><br>
-                <input type="submit" value="Calculate">
-            </form>
+        <div class="row">
+            <div class = "col-sm-12 col-lg-6">
+                <div class = "container">
+                    <div class="SolveMethod" id="ContainerSSS">
+                        <div class = "col-12">
+                            <div class = "container">
+                                <div class = "Inputs">
+                                    <div class = "row">
+                                        <div class = "container">
+                                            <h3>Inputs</h3>
+                                        </div>
+                                    </div>
+                                    <form class = "container" id="FormSSS">
+                                        <div class="row">
+                                            <div class = "col-12">Side a:</div>
+                                        </div>
+                                        <input type="text" id="inSideA"><br>
+                                        <div class="row">
+                                            <div class = "col-12">Side b:</div>
+                                        </div>
+                                        <input type="text" id="inSideB"><br>
+                                        <div class="row">
+                                            <div class = "col-12">Side c:</div>
+                                        </div>
+                                        <input type="text" id="inSideC"><br>
+                                        <input type="submit" value="Calculate">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <div class = "col-sm-12 col-lg-6">
+                <div class = "container">
+                    <div class="Results">
+                        <div class = "row">
+                            <div class = "container">
+                                <h3>Results</h3>
+                            </div>
+                        </div>
+                        <div class = "container" id = "outSidesContainer">
+                            <h4>Sides</h4>
+                            <div class = "row">
+                                <div class = "col-12">
+                                    a = <span id="outSideA"></span>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-12">
+                                    b = <span id="outSideB"></span>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-12">
+                                    c = <span id="outSideC"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "container" id = "outAnglesContainer">
+                            <h4>Angles</h4>
+
+                            <div class = "row">
+                                <div class = "col-12">
+                                    ∠A = <span id="outAngleA"></span>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-12">
+                                    ∠B = <span id="outAngleB"></span>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-12">
+                                    ∠C = <span id="outAngleC"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
         <hr>
-        <div class="Results">
-            <h3>Results</h3>
-            <ul class="Sides">
-                <li>a = <span id="outSideA"></span></li>
-                <li>b = <span id="outSideB"></span></li>
-                <li>c = <span id="outSideC"></span></li>
-            </ul>
-            <ul class="Angles">
-                <li>∠A = <span id="outAngleA"></span></li>
-                <li>∠B = <span id="outAngleB"></span></li>
-                <li>∠C = <span id="outAngleC"></span></li>
-            </ul>
-        </div>
-        
+
+
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
-        
+
         <!-- custom JS -->
         <script type="text/javascript" src="backend.js"></script>
     </body>

@@ -7,15 +7,27 @@ ul > li {
     list-style: none;
 }
 
+.Results, .Inputs {
+    margin-top: 3rem;
+}
+
+#outSidesContainer, #outAnglesContainer {
+    margin-top: 1rem;
+}
+
 /*--------default_font--------*/
+/*
 font-size{
     1rem;
 }
 h1 {
-    font:1.5rem Trebuchet MS;
+    font:3rem Trebuchet MS;
 }
+*/
 
 /*-----mobile-----*/
+
+/*
 @media screen and (max-width:1199px){
     body{
         font-size: 2rem;
@@ -24,3 +36,4 @@ h1 {
         font-size: 2rem;
     }
 }
+*/
