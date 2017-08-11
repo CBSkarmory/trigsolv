@@ -41,4 +41,9 @@ h1 {
     h3 {
       font-size: 2rem;  
     }
+    
+/*------mobile_spacing------*/
+    .Inputs {
+        margin-top: 0.5rem;
+    }
 }
