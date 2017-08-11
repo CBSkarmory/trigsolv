@@ -25,9 +25,8 @@ h1 {
 }
 */
 
-/*-----mobile-----*/
+/*-----mobile_font-----*/
 
-/*
 @media screen and (max-width:1199px){
     body{
         font-size: 2rem;
@@ -35,5 +34,10 @@ h1 {
     input {
         font-size: 2rem;
     }
+    h1 {
+        font-size: 4rem;
+    }
+    h3 {
+      font-size: 3rem;  
+    }
 }
-*/
