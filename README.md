@@ -1,5 +1,5 @@
 # trigsolv
-![Site Status](https://img.shields.io/badge/site-online-green.svg)
+[![Site Status](https://img.shields.io/badge/site-online-green.svg)](https://cbskarmory.github.io/trigsolv)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 triangle solver
